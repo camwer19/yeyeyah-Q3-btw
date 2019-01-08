@@ -1,0 +1,58 @@
+<html>
+  <body>
+    
+    <button onclick="rock()">Rock</button>
+    <button onclick="paper()">Paper</button>
+    <button onclick="scissors()">Scissors</button>
+    
+    <script>
+      
+      
+      var compchoices = ["rock", "paper", "scissors"];
+      var comprandom = Math.floor(Math.random() * compchoices.length);
+      var compfinal = compchoices[comprandom];
+      
+      function rock() {
+        if (compfinal == "scissors") {
+          window.alert("You win");
+          
+        }
+        else if (compfinal == "rock"){
+          window.alert("You tied");
+        }
+        else {
+          window.alert("You lose");
+        }
+      }
+      
+      
+      function paper() {
+        if (compfinal == "rock") {
+          window.alert("You win");
+          
+        }
+        else if (compfinal == "paper"){
+          window.alert("You tied");
+        }
+        else {
+          window.alert("You lose");
+        }
+      }
+      
+      
+      function scissors() {
+        if (compfinal == "paper") {
+          window.alert("You win");
+          
+        }
+        else if (compfinal == "scissors"){
+          window.alert("You tied");
+        }
+        else {
+          window.alert("You lose");
+        }
+      }
+      
+    </script>
+  </body>
+</html>
